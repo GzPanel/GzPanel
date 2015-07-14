@@ -1,0 +1,449 @@
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-toggle {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.container > .navbar-header,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.navbar-toggle {
+    float: left;
+}
+
+.admin-login-darkbg {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.admin-login {
+    width: 500px;
+    padding: 25px 100px 25px 100px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0px 0px 17px 0px #777;
+    -moz-box-shadow: 0px 0px 17px 0px #777;
+    box-shadow: 0px 0px 17px 0px #777;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .navbar-toggle-show {
+        display: block;
+    }
+}
+
+/* Slidebars */
+
+.sb-slidebar {
+    background-color: #222222;
+}
+
+/* ---------------
+ * 003 - Slidebars
+ */
+
+.sb-slidebar {
+    background-color: #222222; /* Background colour. */
+    color: #e8e8e8; /* Text colour. */
+}
+
+.sb-slidebar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sb-slidebar a:hover {
+    color: #f2f2f2; /* Link hover colour. */
+    text-decoration: underline;
+}
+
+/* Left */
+
+.sb-menu li .sb-open-right, .sb-menu li small {
+    display: inline-block;
+    padding: 14px;
+}
+
+.sb-menu li img {
+    margin: 14px;
+}
+
+.sb-left .sb-menu li a {
+    border-left: 3px solid transparent;
+}
+
+.sb-left .sb-menu li a:hover {
+    border-left: 3px solid; /* Removes transparent colour, so border colour will be the same as link hover colour. */
+}
+
+.sb-right .sb-menu li a {
+    border-right: 3px solid transparent;
+}
+
+.sb-right .sb-menu li a:hover {
+    border-right: 3px solid; /* Removes transparent colour, so border colour will be the same as link hover colour. */
+}
+
+.sb-menu {
+    /* Apply to <ul> or <ol>. */
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+    list-style-type: none;
+}
+
+.sb-menu li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Will lighten any background colour you set. */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Will darken any background colour you set. */
+}
+
+.sb-menu > li:first-child {
+    border-top: none; /* Removes top border from first list item.. */
+}
+
+.sb-menu > li:last-child {
+    border-bottom: none; /* Removed bottom border from last list item. */
+}
+
+.sb-menu li a {
+    width: 100%; /* Makes links full width. */
+    display: inline-block;
+    padding: 1em; /* Creates an even padding the same size as your font. */
+    color: #f2f2f2;
+}
+
+.sb-menu li a:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.05); /* Will lighten any background colour you set. */
+}
+
+.circular {
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+    border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+    z-index: 1000;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #fff;
+    color: #fff;
+    border-right: 1px solid #eee;
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-left: -20px;
+}
+
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #428bca;
+}
+
+.img-circle {
+    background: #ffffff;
+    border-width: 25px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.solid_border {
+    border-style: solid;
+}
+
+.double_border {
+    border-style: double;
+}
+
+.dotted_border {
+    border-style: dotted;
+}
+
+.groove_border {
+    border-style: groove;
+}
+
+.red_border {
+    border-color: #FF0000;
+}
+
+.green_border {
+    border-color: #00FF00;
+}
+
+.black_border {
+    border-color: #363636;
+}
+
+.white_border {
+    border-color: #C9C9C9;
+}
+
+.blue_border {
+    border-color: #006EFF;
+}
+
+.nolink, .nolink:hover, .nolink:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.linkUrl_selection {
+    color: #B0B0B0;
+}
+
+.linkName_selection {
+    color: #4D4D4D;
+}
+
+.vertical_alignment {
+    width: auto;
+    height: auto;
+    background: #23527c;
+}
+
+.vertical_alignment_box {
+    vertical-align: middle;
+}
+
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+
+.border-right {
+    border-right: double 2px #0f0f0f;
+    height: 100%;
+}
+
+#statusRing #deleteRing {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    #statusRing #deleteRing {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        opacity: 0.3;
+    }
+}
+
+.profileCollapsed {
+    background: #DBDBDB;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#statusRing:hover #deleteRing {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0.3;
+    transition: all 500ms;
+}
+
+#statusRing {
+    padding: 10px;
+}
+
+#statusRing:hover #deleteRing:hover {
+    opacity: 1;
+    transition: all 500ms;
+}
+
+#loadingSpinner {
+    position: fixed;
+    text-align: center;
+    display: table;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+.spinner {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 100px;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+.panel_menu span {
+    padding: 5px 0px 0px 5px;
+}
+
+.panel_menu {
+    z-index: 1000;
+    -webkit-transform: translateZ(0);
+    position: fixed;
+    color: rgba(255, 255, 255, 0.6);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 500ms;
+    margin-bottom: -30px;
+}
+
+.panel_menu > div > a > div > p {
+    color: #fff;
+
+}
+
+.panel_menu:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transition: all 500ms;
+    margin-bottom: 0;
+}
+
+.panel_menu > div > a > div > span {
+    color: #fff;
+    font-size: 20px;
+}
+
+.panel_sidemenu {
+    z-index: 1000;
+    -webkit-transform: translateZ(0);
+    position: fixed;
+    right: 0;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 500ms;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url('http://placehold.it/50x50') no-repeat;
+    margin: 10px 20px;
+    float: right;
+}
+
+.panel_sidemenu:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .panel_menu > div > a > div > p {
+        display: none;
+    }
+
+    .panel_menu {
+        margin-bottom: 0;
+        transition: all 500ms;
+    }
+}
+
+.grey_backdrop {
+    background: #F2F2F2;
+}
+
+.red-text {
+    color: #FF0000;
+}
+
+.green-text {
+    color: #00FF00;
+}
+
+#contentLoader {
+    width: 100%;
+    padding-right: 5%;
+    padding-bottom: 35px;
+}
+
+.outline {
+    outline: 1px #222222 solid;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}

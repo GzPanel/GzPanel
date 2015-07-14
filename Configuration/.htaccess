@@ -1,0 +1,4 @@
+# Please DO NOT TOUCH THIS FILE
+# Doing so will cause your website to become vulnerable
+# and your information could be compromised.
+DENY FROM ALL

@@ -1,0 +1,3 @@
+This folder is pretty much a disaster... It needs some cleaning up, which will be done later on...
+This allows users to install and deploy the panel quickly and easily.
+The panel does not look to great, it needs more 'pizaz'.

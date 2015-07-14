@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Map http://www.example.com to /jekyll.
+RewriteRule ^$ public/ [L]
+
+# Map http://www.example.com/x to /jekyll/x unless there is a x in the web root.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteCond %{REQUEST_URI} !^/admin/
+RewriteCond %{REQUEST_URI} !^/api/
+RewriteRule ^(.*)$ public/$1
+
+# Add trailing slash to directories within jekyll
+# This does not expose the internal URL.
+RewriteCond %{SCRIPT_FILENAME} -d
+RewriteRule ^public/(.*[^/])$ http://www.pvp.kz/panel/$1/ [R=301]
