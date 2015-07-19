@@ -1,4 +1,21 @@
+#**GzPanel**
+### _The panel for all your hosting needs!_
 
+**_Features:_**
+- Easy dashboard management
+- Responsive panel (Works on mobiles and desktops)
+- Easily configurable settings
+
+**_Planned features:_**
+- Daemon for linux (Linux is going to be supported first)
+- Ticket management (a way for clients to submit issues)
+- Payment gateway via PayPal
+
+
+
+
+
+-------------- Old Readme (Ignore) --------
 Make sure to chmod 'tmp' folder to 777
 
 Hosting the database on the same system as the panel will cut load times by quite a bit.
@@ -18,4 +35,3 @@ TODO:
    -- Set-up checking of perms for each script (updateSettings) to make sure user has access.
 
    + Check Node install script on linux - Get a way to fetch the node and use it in status insert's.
-
